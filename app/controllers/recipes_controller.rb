@@ -17,7 +17,8 @@ class RecipesController < ApplicationController
 		@recipe = current_user.recipes.build(recipe_params)
 
 		if @recipe.save
-			redirect_to @recipe, notice: "Successfully created new recipe"
+			# redirection to recipie type and highlighting the recipe name will be our future functionality
+			redirect_to @recipe, notice: "Successfully created new recipe" 
 		else
 			render 'new'
 		end
