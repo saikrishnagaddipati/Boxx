@@ -1,6 +1,6 @@
 class Recipe < ActiveRecord::Base
 	belongs_to :user
-
+# including recipe type would be our uture functionality
 	has_many :ingredients
 	has_many :directions
 

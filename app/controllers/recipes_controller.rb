@@ -40,7 +40,7 @@ class RecipesController < ApplicationController
 	end
 
 	private
-
+#krishna:March 21st 2016, optionalizing the description for upcoming recipes should be our future functionality
 	def recipe_params
 		params.require(:recipe).permit(:title, :description, :image, ingredients_attributes: [:id, :name, :_destroy], directions_attributes: [:id, :step, :_destroy])
 	end
